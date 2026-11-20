@@ -1,0 +1,7 @@
+// packages-index: the registry index of Nabi packages (see README.md).
+// `api`: where `nabi login` / `nabi publish` / `nabi yank` talk to.
+// `format`: the package line format; a change to the line schema raises it.
+Config {
+    api: "https://packages.nabi-lang.org",
+    format: 1,
+}

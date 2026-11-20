@@ -1,0 +1,19 @@
+# A push to main (the registry's own, or a merged change to the other files)
+# has the packages server sync its checkout.
+# Deploys run in nabi-lang/infra; nothing about them lives here.
+name: Deploy / packages-index
+
+on:
+  push:
+    branches: [main]
+
+permissions: {}
+
+jobs:
+  deploy:
+    name: Deploy
+    uses: nabi-lang/.github/.github/workflows/reusable-deploy.yml@v1.0.0
+    with:
+      site: packages-index
+    secrets:
+      GH_DISPATCH_TOKEN_INFRA: ${{ secrets.GH_DISPATCH_TOKEN_INFRA }}
