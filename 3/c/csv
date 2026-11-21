@@ -1,0 +1,1 @@
+Package { name: "csv", version: "0.1.0", deps: [], source: Dep::git("https://github.com/nabi-lang/csv", rev: "6af331c8363b3f54de2dcb0cc6106759ba6c3807"), tree: "5d6172f1ff52829cf320258d5b34808cb28b978d", archive: "0491cc0db7b9c2d8bec6f1a2ecb8860b6cc9c79f6705f04ed2dd075d0a17edd5", yanked: false, nabi_version: "0.1.0", official: true }
