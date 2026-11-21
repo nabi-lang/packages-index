@@ -1,0 +1,1 @@
+Package { name: "special", version: "0.1.0", deps: [], source: Dep::git("https://github.com/nabi-lang/special", rev: "17c6ab89527cc74404710d45d98702a0e5ef6f4a"), tree: "b308b66c7538953f93f389726005000ae27b1701", archive: "dc90689c3c23d192e3cdc919cf095236aaf788b76431213ca506915d80fc566c", yanked: false, nabi_version: "0.1.0", official: true }
