@@ -1,0 +1,1 @@
+Package { name: "json", version: "0.1.0", deps: [], source: Dep::git("https://github.com/nabi-lang/json", rev: "5434ad691034eaee970515098c7ac70c06787732"), tree: "95845f8c2a7fd95879de2c1ccb8991cf226fd11a", archive: "99df6f890febbccb323ff124d97b1c4e571b5212e06c013f4f4fcbadf8f21907", yanked: false, nabi_version: "0.1.0", official: true }
