@@ -12,7 +12,7 @@ permissions: {}
 jobs:
   deploy:
     name: Deploy
-    uses: nabi-lang/.github/.github/workflows/reusable-deploy.yml@v1.0.2
+    uses: nabi-lang/.github/.github/workflows/reusable-deploy.yml@v1.0.3
     with:
       site: packages-index
     secrets:
