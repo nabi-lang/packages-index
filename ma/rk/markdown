@@ -1,0 +1,1 @@
+Package { name: "markdown", version: "0.1.0", deps: [], source: Dep::git("https://github.com/nabi-lang/markdown", rev: "909d7ddd5f84dfd5126cab3c7a423957f8803491"), tree: "f81a26c000a186e1fcc04bb782dd4c36b67608bf", archive: "249c117026db4457c2db81f203904d57aa388346c372936fbfacbbe3866b61fe", yanked: false, nabi_version: "0.1.0", official: true }
