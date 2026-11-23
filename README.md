@@ -53,7 +53,7 @@ Package { name: "geom", version: "0.3.1", deps: [{ name: "num", req: "^1.2", kin
 Fields come in the order above; optional ones are left out when unset. `official: true`, when present, is always the last field:
 
 ```nabion
-Package { name: "json", version: "0.1.0", deps: [], source: Dep::git("https://github.com/nabi-lang/json.git", rev: "<40-char commit>"), tree: "<40-char tree>", yanked: false, nabi_version: "0.1.0", official: true }
+Package { name: "json", version: "0.1.0", deps: [], source: Dep::git("https://github.com/nabi-lang/json", rev: "<40-char commit>"), tree: "<40-char tree>", archive: "<64-char sha-256>", yanked: false, nabi_version: "0.1.0", official: true }
 ```
 
 `official` is written only by the registry, on a version published by a trusted publisher in a repository of the [nabi-lang](https://github.com/nabi-lang) organization; a publish that sends it is refused, and `official: false` is never written. It is a bool: a line where it is anything else is malformed. Each version keeps the flag it was published with, so whether a package is official is read from its latest version's line: the highest version that is not yanked, a release over a pre-release (as the site and `nabi` do, the latter to add an official package on `use`). `nabi component add packages` keeps the archives of the official packages' newest versions that its toolchain builds (their `nabi_version` admits it) for builds without a network.
